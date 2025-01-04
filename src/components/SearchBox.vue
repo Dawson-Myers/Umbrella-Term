@@ -2,7 +2,7 @@
     <div class="search-box">
       <input 
         type="text" 
-        v-model="searchTerm" 
+        v-model= "searchTerm"
         placeholder="Search..."
       />
     </div>

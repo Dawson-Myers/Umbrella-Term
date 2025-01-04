@@ -1,10 +1,8 @@
 <template>
 <div class="dropdown">
-    <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+    <button class="dropbtn"><i class="fa-solid fa-language fa-lg"></i></button>
     <div class="dropdown-content">
-      <RouterLink to="#">Sign in</RouterLink>
-      <RouterLink to="#">Create Account</RouterLink>
-      <RouterLink to="#">Help</RouterLink>
+
     </div>
 </div>
 </template>
@@ -23,12 +21,10 @@ export default {
 <style scoped>
 /* Dropdown Button */
 .dropbtn {
-  background-color: #731473;
-  color: white;
-  padding: 15px;
-  border-radius: 25px;
-  font-size: 16px;
-  border: none;
+  background-color: #070017;
+  color: #ffb3de;
+  font-size: 20px;
+  border: none; 
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -63,6 +59,9 @@ export default {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3b093b;}
+.dropdown:hover .dropbtn {
+  background-color: #070017;
+  font-size: 24px;
+}
 
 </style>

@@ -23,11 +23,12 @@ export default {
       
     </div>
     
-    <RouterLink to="/explore" class="nav_menu_hover">Explore</RouterLink>
+    <RouterLink to="" class="nav_menu_hover">Explore</RouterLink>
     <SearchBox/>
     <RouterLink to="/teaching" class="nav_menu_hover">Teach on Umbrella</RouterLink>
     <RouterLink to="/pricing" class="nav_menu_hover">Plans & Pricing</RouterLink>
-    
+    <RouterLink to="/login" class="nav_login">Login</RouterLink>
+    <RouterLink to="/create_account" class="nav_signup">Sign Up</RouterLink>
     <DropDownMenu/>
   </div>
 </nav>
@@ -37,7 +38,6 @@ export default {
 </template>
 
 <style scoped>
-
 
 .navbar {
   width: 100%;

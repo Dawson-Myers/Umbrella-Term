@@ -19,6 +19,19 @@ a,
   text-decoration: none;
   
 }
+.nav_login {
+  border-color: #ffb3de;
+  border: solid;
+  border-radius: 0.5em;
+  padding: 0.7rem;
+}
+.nav_signup {
+  background-color: #ffb3de;
+  border: solid #ffb3de;
+  color: #070017;
+  border-radius: 0.5em;
+  padding: 0.7rem;
+}
 
 @media (hover: hover) {
   .nav_menu_hover:hover {
@@ -26,7 +39,14 @@ a,
     color: #ffb3de;
     border-bottom: 1px solid;
     font-weight: 700;
-    
+  }
+  .nav_login:hover {
+    background-color: #1f1b29;
+    font-weight: 700
+  }
+  .nav_signup:hover {
+    background-color: #c288a9;
+    font-weight: 700
   }
 }
 
