@@ -1,6 +1,6 @@
 <template>
-    <div class="resources">
-      <h1>This is a resource page</h1>
+    <div class="teaching">
+      <h1>This is a teaching page</h1>
     </div>
   </template>
   

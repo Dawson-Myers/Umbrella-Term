@@ -21,12 +21,11 @@ a,
 }
 
 @media (hover: hover) {
-  a:hover {
+  .nav_menu_hover:hover {
     background: #070017;
     color: #ffb3de;
     border-bottom: 1px solid;
-    font-weight: 900;
-    letter-spacing: 1px;
+    font-weight: 700;
     
   }
 }

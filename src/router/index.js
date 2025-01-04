@@ -10,19 +10,19 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
+      path: '/explore',
+      name: 'explore',
+      component: () => import('../views/ExploreView.vue'),
     },
     {
-      path: '/resources',
-      name: 'resources',
-      component: () => import('../views/ResourcesView.vue'),
+      path: '/teaching',
+      name: 'teaching',
+      component: () => import('../views/TeachingView.vue'),
     },
     {
-      path: '/skills',
-      name: 'skills',
-      component: () => import('../views/SkillView.vue'),
+      path: '/pricing',
+      name: 'pricing',
+      component: () => import('../views/PricingView.vue'),
     }
 
   ],

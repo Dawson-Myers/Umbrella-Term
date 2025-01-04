@@ -3,9 +3,7 @@
       <input 
         type="text" 
         v-model="searchTerm" 
-        placeholder="Search..." 
-        @focus="isExpanded = true" 
-        @blur="isExpanded = false"
+        placeholder="Search..."
       />
     </div>
   </template>
@@ -16,7 +14,6 @@
     data() {
       return {
         searchTerm: '',
-        isExpanded: false
       }
     }
   }
@@ -24,17 +21,16 @@
   
   <style scoped>
   .search-box {
-    width: 200px; /* Initial width */
+    width: 600px; /* Initial width */
     transition: width 0.3s ease-in-out;
+   
   }
-  
-  .search-box.expanded {
-    width: 400px; /* Expanded width */
-  }
+
   
   input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 15px;
   }
   </style>
