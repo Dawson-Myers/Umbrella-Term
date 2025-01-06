@@ -1,12 +1,9 @@
 <template>
-    <div class="search-box">
-      <input 
-        type="text" 
-        v-model= "searchTerm"
-        placeholder="Search..."
-      />
-    </div>
-  </template>
+  <div class="form-group fg--search">
+    <input type="text" class="input" placeholder="Search..." v-model="searchTerm">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </div>
+</template>
   
   <script>
   export default {
@@ -20,17 +17,37 @@
   </script>
   
   <style scoped>
-  .search-box {
-    width: 600px; /* Initial width */
-    transition: width 0.3s ease-in-out;
-   
+
+    * {
+    box-sizing: border-box;
   }
 
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
+  .fg--search {
+    background: white;
+    position: relative;
+    width: 30rem;
+    border-radius: 2rem;
   }
+
+  .fg--search input {
+    width: 100%;
+    padding: 20px 60px 20px 20px;
+    display: block;
+    border-radius: 2rem;
+  }
+
+  .fg--search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px 20px;
+    z-index: 2;
+  }
+
+
   </style>

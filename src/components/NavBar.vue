@@ -2,11 +2,11 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import SearchBox from './SearchBox.vue'
-import DropDownMenu from './DropDownMenu.vue'
-
+import LanguageSelect from './LanguageSelect.vue';
+import DropDownMenu from './DropDownMenu.vue';
 export default {
   name: "NavBar",
-  components: { RouterLink, RouterView, SearchBox, DropDownMenu }
+  components: { RouterLink, RouterView, SearchBox, LanguageSelect, DropDownMenu }
 
 }
 </script>
@@ -18,7 +18,10 @@ export default {
       <RouterLink to="/">
       <img src="./icons/umbrella-icon.png" height="64px"/>
       </RouterLink>
-      <h2>Umbrella Term</h2>
+      <RouterLink to="/">
+        <h2>Umbrella Term</h2>
+      </RouterLink>
+      
       
       
     </div>
@@ -27,9 +30,13 @@ export default {
     <SearchBox/>
     <RouterLink to="/teaching" class="nav_menu_hover">Teach on Umbrella</RouterLink>
     <RouterLink to="/pricing" class="nav_menu_hover">Plans & Pricing</RouterLink>
-    <RouterLink to="/login" class="nav_login">Login</RouterLink>
-    <RouterLink to="/create_account" class="nav_signup">Sign Up</RouterLink>
+    <RouterLink to="/login" class="nav_login">Log in</RouterLink>
+
     <DropDownMenu/>
+
+    <RouterLink to="/create_account" class="nav_signup">Sign up</RouterLink>
+    
+    <LanguageSelect/>
   </div>
 </nav>
 
@@ -38,6 +45,13 @@ export default {
 </template>
 
 <style scoped>
+
+h2 {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large ;
+}
 
 .navbar {
   width: 100%;

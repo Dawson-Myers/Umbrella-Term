@@ -11,8 +11,7 @@
 a,
 .pink {
   background: #070017;
-  font-weight: 300;
-  
+  font-weight: 500;
   color: #ffb3de;
   line-height: 1.4;
   padding: .25em;
@@ -38,15 +37,13 @@ a,
     background: #070017;
     color: #ffb3de;
     border-bottom: 1px solid;
-    font-weight: 700;
+    
   }
   .nav_login:hover {
     background-color: #1f1b29;
-    font-weight: 700
   }
   .nav_signup:hover {
     background-color: #c288a9;
-    font-weight: 700
   }
 }
 
