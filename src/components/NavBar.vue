@@ -2,81 +2,57 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import SearchBox from './SearchBox.vue'
-import LanguageSelect from './LanguageSelect.vue';
 import DropDownMenu from './DropDownMenu.vue';
+
 export default {
   name: "NavBar",
-  components: { RouterLink, RouterView, SearchBox, LanguageSelect, DropDownMenu }
+  components: { RouterLink, RouterView, SearchBox, DropDownMenu, },
+  data() {
+    return {
+      appTitle: 'Umbrella Term',
+    }
+  }
 
 }
 </script>
 <template>
 <header>
-  <nav class="navbar">
-    <div class="container">
-    <div class="logo">
-      <RouterLink to="/">
-      <img src="./icons/umbrella-icon.png" height="64px"/>
-      </RouterLink>
-      <RouterLink to="/">
-        <h2>Umbrella Term</h2>
-      </RouterLink>
-      
-      
-      
-    </div>
-    
-    <RouterLink to="" class="nav_menu_hover">Explore</RouterLink>
-    <SearchBox/>
-    <RouterLink to="/teaching" class="nav_menu_hover">Teach on Umbrella</RouterLink>
-    <RouterLink to="/pricing" class="nav_menu_hover">Plans & Pricing</RouterLink>
-    <RouterLink to="/login" class="nav_login">Log in</RouterLink>
+<v-toolbar app color="#070017" darken>
+<v-toolbar-side-icon><img src="./icons/umbrella-icon.png" height="64px"/></v-toolbar-side-icon>
+<v-toolbar-title class="title">Umbrella Term</v-toolbar-title>
+<DropDownMenu/>
+<SearchBox/>
+<v-btn flat :to="{name: 'teach'}">BECOME A TEACHER</v-btn>
+<v-btn flat :to="{name: 'pricing'}">PLANS & PRICING</v-btn>
+<v-btn flat :to="{name: 'sign-in'}">SIGN IN</v-btn>
+<v-btn color="#ffb3de" flat :to="{name: 'create-account'}">CREATE ACCOUNT</v-btn>
 
-    <DropDownMenu/>
-
-    <RouterLink to="/create_account" class="nav_signup">Sign up</RouterLink>
-    
-    <LanguageSelect/>
-  </div>
-</nav>
-
+</v-toolbar>
 </header>
 <RouterView />
 </template>
 
 <style scoped>
 
-h2 {
-  font-family: "Pacifico", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: x-large ;
-}
-
-.navbar {
+ .v-toolbar {
   width: 100%;
   background-color: #070017;
-  padding: 15px;
+  padding: 1rem;
   position: Fixed;
   top: 0;
   z-index: 1;
-}
-
-.container {
   max-width: auto;
   margin: 0 auto;
-  padding: 0 2rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.logo {
-  display: flex;
-}
+.v-toolbar-title {
+  font-family: Pacifico;
+  color: #ffb3de;
+  font-size: x-large;
 
-.logo img {
-  padding: 0 1rem;
 }
 
 </style>
