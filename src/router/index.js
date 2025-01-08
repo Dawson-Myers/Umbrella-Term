@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/Home.vue'
+import HomeView from '../views/Home-Page.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,12 +12,12 @@ const router = createRouter({
     {
       path: '/explore',
       name: 'explore',
-      component: () => import('../views/Explore.vue'),
+      component: () => import('../views/explore-views/Explore-Page.vue'),
     },
     {
       path: '/become-a-teacher',
       name: 'teach',
-      component: () => import('../views/Teaching.vue'),
+      component: () => import('../views/Teaching-Page.vue'),
     },
     {
       path: '/pricing',
@@ -26,15 +26,14 @@ const router = createRouter({
     },
     {
       path: '/sign-in',
-      name: 'sing-in',
-      component: () => import('../views/Login.vue'),
+      name: 'sign-in',
+      component: () => import('../views/Login-Page.vue'),
     },
     {
       path: '/create-account',
       name: 'create-account',
       component: () => import('../views/CreateAccount.vue'),
-    }
-
+    },
   ],
 })
 

@@ -14,9 +14,8 @@ a,
   font-weight: 500;
   color: #ffb3de;
   line-height: 1.4;
-  padding: .25em;
+  padding: 0.25em;
   text-decoration: none;
-  
 }
 .nav_login {
   border-color: #ffb3de;
@@ -37,7 +36,6 @@ a,
     background: #070017;
     color: #ffb3de;
     border-bottom: 1px solid;
-    
   }
   .nav_login:hover {
     background-color: #1f1b29;
@@ -59,4 +57,3 @@ a,
     padding: 0 0;
   }
 }
-

@@ -1,13 +1,13 @@
 <template>
-  <div class="create-account">
-    <h1>This is a Create Account Page</h1>
+  <div class="sign-in">
+    <h1>This is a Log in Page</h1>
   </div>
   
 </template>
 
 <script>
 export default {
-  name: 'create-account',
+  namme: 'sign-in',
 }
 </script>
 

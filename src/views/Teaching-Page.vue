@@ -1,17 +1,16 @@
-<template>
-  <div class="create-account">
-    <h1>This is a Create Account Page</h1>
-  </div>
-  
-</template>
-
 <script>
 export default {
-  name: 'create-account',
+  name: 'teaching-page',
 }
 </script>
 
-<style scoped>
+<template>
+  <div class="teaching">
+    <h1>This is a teaching page</h1>
+  </div>
+</template>
+
+<style>
 @media (min-width: 1024px) {
   .resources {
     min-height: 100vh;

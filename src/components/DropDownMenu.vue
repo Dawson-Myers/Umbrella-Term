@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <v-btn color="white">
-      {{buttonName}}
+      {{ buttonName }}
 
       <v-menu activator="parent">
         <v-list>
@@ -38,14 +38,13 @@
 
 <script>
 export default {
-  name:'nestedDropDownMenu',
+  name: 'nestedDropDownMenu',
   data() {
     return {
-      buttonName:"Explore"
+      buttonName: 'Explore',
     }
-  }
+  },
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
