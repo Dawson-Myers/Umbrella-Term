@@ -46,5 +46,7 @@ export default {
   right: 0;
   padding: 18px 20px;
   z-index: 2;
+  color: #070017;
 }
+
 </style>
