@@ -3,7 +3,6 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import il8n from './il8n'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
@@ -20,7 +19,5 @@ const app = createApp(App)
 app.use(router)
 
 app.use(vuetify)
-
-app.use(il8n)
 
 app.mount('#app')

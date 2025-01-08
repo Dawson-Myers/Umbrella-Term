@@ -1,14 +1,15 @@
-<script setup>
-import Tile from '../components/Tile.vue'
-  
+<script>
+    export default {
+
+    }
 </script>
 
 <template>
-    <Tile/>
+<h2>This is a homepage.</h2>
   
 </template>
 
 
 <style scoped>
-
+ 
 </style>

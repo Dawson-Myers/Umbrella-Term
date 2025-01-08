@@ -15,25 +15,24 @@ export default {
 
 }
 </script>
-<template>
-<header>
-<v-toolbar app color="#070017" darken>
-<v-toolbar-side-icon><img src="./icons/umbrella-icon.png" height="64px"/></v-toolbar-side-icon>
-<v-toolbar-title class="title">Umbrella Term</v-toolbar-title>
-<DropDownMenu/>
-<SearchBox/>
-<v-btn flat :to="{name: 'teach'}">BECOME A TEACHER</v-btn>
-<v-btn flat :to="{name: 'pricing'}">PLANS & PRICING</v-btn>
-<v-btn flat :to="{name: 'sign-in'}">SIGN IN</v-btn>
-<v-btn color="#ffb3de" flat :to="{name: 'create-account'}">CREATE ACCOUNT</v-btn>
 
-</v-toolbar>
-</header>
+<template>
+  <header>
+    <v-toolbar app color="#070017" darken>
+      <v-toolbar-side-icon><img src="./icons/umbrella-icon.png" height="64px"/></v-toolbar-side-icon>
+      <v-toolbar-title class="title">Umbrella Term</v-toolbar-title>
+        <DropDownMenu/>
+        <SearchBox/>
+        <v-btn flat :to="{name: 'teach'}">BECOME A TEACHER</v-btn>
+        <v-btn flat :to="{name: 'pricing'}">PLANS & PRICING</v-btn>
+        <v-btn flat :to="{name: 'sign-in'}">SIGN IN</v-btn>
+        <v-btn color="#ffb3de" flat :to="{name: 'create-account'}">CREATE ACCOUNT</v-btn>
+    </v-toolbar>
+  </header>
 <RouterView />
 </template>
 
 <style scoped>
-
  .v-toolbar {
   width: 100%;
   background-color: #070017;
