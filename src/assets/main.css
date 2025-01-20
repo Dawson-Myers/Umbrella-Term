@@ -2,7 +2,7 @@
 
 #app {
   max-width: 1280px;
-  margin: 0 0;
+  margin: 0 0 ;
   padding: 0 0;
   font-weight: normal;
   color: #ffb3de;
@@ -49,6 +49,7 @@ a,
   body {
     display: flex;
     place-items: center;
+
   }
 
   #app {

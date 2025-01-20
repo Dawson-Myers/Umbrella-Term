@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='center'>
     <v-img
       class="mx-auto my-6"
       max-width="228"
@@ -8,7 +8,7 @@
 
     <v-card
       class="mx-auto pa-12 pb-8"
-      elevation="8"
+      elevation="10"
       max-width="448"
       rounded="lg"
     >
@@ -87,5 +87,8 @@ export default {
 </script>
 
 <style scoped>
+.center{
+  
+}
 
 </style>

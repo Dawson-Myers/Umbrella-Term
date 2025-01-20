@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <header>
+
     <v-toolbar app color="#070017" darken>
       <RouterLink :to="{name: 'home'}">
         <v-toolbar-side-icon>
@@ -42,7 +42,7 @@ export default {
       </RouterLink>
       
     </v-toolbar>
-  </header>
+
   <RouterView />
 </template>
 

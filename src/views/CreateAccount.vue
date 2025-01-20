@@ -36,7 +36,7 @@
 
       <v-checkbox
         v-model="terms"
-        color="secondary"
+        color="purple"
         label="I agree to site terms and conditions"
       ></v-checkbox>
     </v-container>
@@ -46,7 +46,7 @@
     <v-card-actions>
       <v-spacer></v-spacer>
 
-      <v-btn color="success">
+      <v-btn color="purple">
         Complete Registration
         <v-icon icon="mdi-chevron-right" end></v-icon>
       </v-btn>
